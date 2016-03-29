@@ -1,0 +1,44 @@
+.login-panel {  
+    margin-top: 150px;   
+}
+.search-panel {  
+    margin-top: 20px;   
+}
+.tredit:hover
+{
+background:url(edit.png) right no-repeat #E6E6E6;
+cursor:pointer;
+}
+.ajax
+{
+font-size:14px;
+/*background-color:#ffffcc;*/
+display: none;
+border:solid 1px #000;
+padding:4px;
+}
+.ajaximage
+{
+font-size:14px;
+display: none;
+padding:4px;
+}
+/* make sidebar nav vertical */ 
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
