@@ -23,7 +23,7 @@ if($_POST['addproductsku'] && $_POST['addproductname'] && $_POST['add_admin_prod
         $error_flag = true;
         echo "skuerror";       
     }
-	if (isset($_FILES['productfile'])){
+	
     if(is_uploaded_file($_FILES['productfile']['tmp_name'])){           
         
         $target_file = $target_dir . basename($_FILES["productfile"]["name"]);
@@ -54,7 +54,7 @@ if($_POST['addproductsku'] && $_POST['addproductname'] && $_POST['add_admin_prod
         $addfinalimagename = $target_dir.$imageFilename.'_'.time().'.'.$imageFileType;
         $addqueryimage = $imageFilename.'_'.time().'.'.$imageFileType;
             
-    }} else {
+    } else {
         $addfinalimagename = $target_dir.'no-image.jpg';
         $addqueryimage = 'no-image.jpg';
     }
