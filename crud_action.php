@@ -23,7 +23,7 @@ if($_POST['addproductsku'] && $_POST['addproductname'] && $_POST['add_admin_prod
         $error_flag = true;
         echo "skuerror";       
     }
-    if (isset($_FILES['productfile']) && $_FILES['productfile'] != ''){
+    if (isset($_FILES['productfile']) && $_FILES['productfile']['tmp_name'] != ''){
     if(is_uploaded_file($_FILES['productfile']['tmp_name'])){           
         
         $target_file = $target_dir . basename($_FILES["productfile"]["name"]);
